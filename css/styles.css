@@ -52,3 +52,10 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+.modal-header {
+  color: floralwhite;
+  background: #067fcf; }
+
+.modal-body {
+  background: #6cbafa; }

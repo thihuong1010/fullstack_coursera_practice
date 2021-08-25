@@ -39,7 +39,7 @@
                         <span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginModalButton">
                         <span class="fa fa-sign-in"></span> Login 
                     </a>
                 </span>
@@ -102,9 +102,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class=" col-12 col-sm-3 align-self-center"> 
-                    <a class="btn btn-primary btn-warning"
-                    data-toggle="modal" data-html="true" title="Or call us at <br><strong>0123456789</strong>"
-                    data-placement="bottom" data-target="#reservetable"
+                    <a class="btn btn-primary btn-warning" id="reserveButton"
                     role="button" style="width: 230px;">Reserve Table</a>
                 </div>
             </div>
@@ -446,6 +444,17 @@
                 $("#carouselButton").children("span").addClass('fa-pause');                    
             }
         });
+
+        // login modal
+        $("#loginModalButton").click(function() {
+            $("#loginModal").modal('toggle');
+        }
+        );
+        // reserve table model
+        $("#reserveButton").click(function() {
+            $("#reservetable").modal('toggle');
+        }
+        );
     });
 </script>
 
